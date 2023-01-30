@@ -9,3 +9,5 @@ number_of_people = ("How many people to split the bill? ")
 answer = (((total_bill*100)/tip_percent)/number_of_people)
 
 print("Each person should pay: $" + answer)
+
+#day 1
