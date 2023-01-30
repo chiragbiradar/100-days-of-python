@@ -2,12 +2,12 @@ print("Welcome to tip calculator")
 
 total_bill = float(input("What was the total bill? $"))
 
-tip_percent = ("what percent tip would you like to give? 10, 12 or 15?")
+tip_percent = float(input("what percent tip would you like to give? 10, 12 or 15?"))
 
-number_of_people = ("How many people to split the bill? ")
+number_of_people = int(input("How many people to split the bill? "))
 
-answer = (((total_bill*100)/tip_percent)/number_of_people)
+answer = ((total_bill*tip_percent)/100)
+answer = (total_bill+answer)/number_of_people
+answer=round(answer,2)
 
-print("Each person should pay: $" + answer)
-
-#day 1
+print(f"Each person should pay: $ {answer}")
