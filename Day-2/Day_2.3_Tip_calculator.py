@@ -11,3 +11,5 @@ answer = (total_bill+answer)/number_of_people
 answer=round(answer,2)
 
 print(f"Each person should pay: $ {answer}")
+
+#Tip calculator
