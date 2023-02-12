@@ -34,7 +34,7 @@ print('''
 print("Your mission is to find treasure")
 
 direction = input()
-direction = direction.lower()
+direction = direction.lower("")
 if direction == "right":
     print("Game Over")
 elif direction == "left":
@@ -49,5 +49,7 @@ elif direction == "left":
             print("Game Over")
         elif door == "blue":
             print("Game Over")
-        elif door == "Yellow":
+        elif door == "yellow":
             print("Congrats You found the Treasure!!!")
+else:
+    print("Game Over!")
